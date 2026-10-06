@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProcesIA — Seguimiento de procesos con IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#/" aria-label="Inicio">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>ProcesIA</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+      <nav id="main-nav" class="nav" aria-label="Principal">
+        <a href="#/" data-route="dashboard">Panel</a>
+        <a href="#/processes" data-route="processes">Procesos</a>
+        <a href="#/alerts" data-route="alerts">Alertas <span id="nav-alerts" class="nav__count" hidden></span></a>
+        <a href="#/ai" data-route="ai">Motor IA</a>
+        <a class="btn btn--primary btn--sm" href="#/new">Nuevo proceso →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <div class="loading" role="status">Cargando…</div>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <footer class="footer container">
+    <span>Sistema de seguimiento de procesos con IA · Prototipo v0.5 (avance 50%)</span>
+    <a href="/docs" target="_blank" rel="noopener">API · OpenAPI</a>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

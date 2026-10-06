@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+data/processes.db
+data/uploads/*
+!data/uploads/.gitkeep
+data/training_history.csv
